@@ -20,7 +20,6 @@ UPositionReport::UPositionReport()
 void UPositionReport::BeginPlay()
 {
 	Super::BeginPlay();
-
 	FString ObjectName = GetOwner()->GetName();
 	FString ObjectPos = GetOwner()->GetTransform().GetLocation().ToString();
 
@@ -35,6 +34,7 @@ void UPositionReport::BeginPlay()
 void UPositionReport::TickComponent( float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction )
 {
 	Super::TickComponent( DeltaTime, TickType, ThisTickFunction );
+
 
 	// ...
 }
